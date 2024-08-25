@@ -76,24 +76,15 @@ exports.getBestRating = (req, res, next) => {
     .catch((error)=>res.status(404).json({error}));}
 
 
-
-
-exports.createRating = (req, res, next) => 
     
 exports.createRating = (req, res, next) => {
 
-
-
     if (0 <= req.body.rating <= 5) {
-
-    
 
         const ratingObject = { ...req.body, grade: req.body.rating };
 
-       
-
-        delete ratingObject._id;
-
+    
+    
 
         Book.findOne({_id: req.params.id})
 
