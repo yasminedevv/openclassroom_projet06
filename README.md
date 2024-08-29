@@ -23,6 +23,14 @@ Suivez les étapes ci-dessous pour installer et configurer le projet localement 
 3. Installez les dépendances nécessaires avec la commande suivante :\
    `npm install`
 
+PORT= 4000
+DB_CONNECTION_STRING = la chaine de connexion à la base de données mongodb
+JWT_TOKEN_SECRET= le TOKEN SECRET
+
+ Remplacez `PORT_4000` par le port local sur lequel votre backend sera connecté.
+-   Remplacez `URL_de_connexion_à_MongoDB` par l'URL de connexion à votre base de données MongoDB, sous le format `mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>?retryWrites=true&w=majority.`
+-   Remplacez `Votre_clé_secrète_pour_les_tokens_JWT` par une clé secrète de votre choix pour les tokens JWT.
+
 ## Configuration de la Base de Données
 Avant de lancer le projet, assurez-vous d'avoir configuré votre base de données MongoDB. Vous pouvez suivre les étapes suivantes :
 1. Accédez au site web de MongoDB https://www.mongodb.com/cloud/atlas/register et inscrivez-vous pour obtenir un compte.
